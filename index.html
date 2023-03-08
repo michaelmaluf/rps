@@ -2,15 +2,51 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&family=Tilt+Warp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Rock Paper Scissors!</title>
 </head>
 <body>
-  <div class="container">
-    <button class="btn rock">rock</button>
-    <button class="btn paper">paper</button>
-    <button class="btn scissors">scissors</button>
-    <div class="result"></div>
+  <header class="header">
+    <h1 class="title">ROCK   PAPER   SCISSORS</h1>
+  </header>
+  <div class="main">
+    <div class="scoreboard">
+      <h2 class="game-info">Choose your weapon</h2>
+      <h3 class="score-info">First one to 5 wins!</h3>
+
+      <div class="scores-container">
+        <div class="score-box">
+          <div class="sign" id="player-sign">
+            <img src="question-mark.png">
+          </div>
+          <p class="score" id="player-score">Player: 0</p>
+        </div>
+
+        <div class="score-box">
+          <div class="sign" id="computer-sign">
+            <img src="question-mark.png">
+          </div>
+          <p class="score" id="computer-score">Computer: 0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="btn rock"></button>
+      <button class="btn paper"></button>
+      <button class="btn scissors"></button>
+    </div>
   </div>
+  <div class="footer">
+
+  </div>
+  <div class="model">
+
+  </div>
+  <div class="overlay"></div>
   <script src="code.js"></script>  
 </body>
 </html>

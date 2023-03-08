@@ -1,0 +1,102 @@
+body {
+  background-color: #635985;
+  color: white;
+  font-family: 'Tilt Warp', cursive;
+  margin: 0;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #443768;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+.title {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-info {
+  margin-top: 40px;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.score-info {
+  text-align: center;
+  font-size: 24px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scores-container {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  padding-top: 20px;
+}
+
+.score-box {
+  width: 180px;
+  height: 200px;
+  border-color: white;
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign {
+  width: 180px;
+  height: 160px;
+  text-align: center;
+}
+
+.score {
+  text-align: center;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.btn {
+  width: 140px;
+  height: 140px;
+}
+
+.btn.rock {
+  background-image: url('rock.png');
+  background-size: contain;
+}
+
+.btn.paper {
+  background-image: url('paper.png');
+  background-size: contain;
+}
+
+.btn.scissors {
+  background-image: url('scissors.png');
+  background-size: contain;
+}
