@@ -8,6 +8,7 @@ body {
 img {
   width: 140px;
   height: 140px;
+  border-radius: 20px;
 }
 
 .header {
@@ -67,6 +68,7 @@ img {
 .sign {
   width: 180px;
   height: 160px;
+  margin-bottom: 12px;
   text-align: center;
 }
 
@@ -76,14 +78,25 @@ img {
 }
 
 .buttons {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 75px;
 }
 
 .btn {
   width: 140px;
   height: 140px;
+  border-radius: 10px;
+  border: 10px solid #b19cd9;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), 
+  -2px -2px 10px rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 10px solid #443768;
 }
 
 .btn.rock {
@@ -99,4 +112,74 @@ img {
 .btn.scissors {
   background-image: url('scissors.png');
   background-size: contain;
+}
+
+.scoreboard {
+  padding-bottom: 30px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+/* when the game is over, the modal will appear active and will prompt the user if they want to restart */
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #443768;
+  text-align: center;
+  font-size: 30px;
+  user-select: none;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;  
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.btn-restart {
+  padding: 15px 20px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: #635985;
+  color: white;
+  font-size: 18px;
+  font-family: 'Tilt Warp', cursive;
+  cursor: pointer;
+}
+
+
+/* darkens the background screen when the game is over and the modal screen appears, very cool */
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.overlay.active {
+  display: block;
 }
